@@ -1,23 +1,14 @@
 package com.md5.test1;
 
-import com.common.test.ObjectUtil;
-import com.jaxb.test1.Customer;
+import com.transfer.object.ObjectUtil;
+import com.jaxb.test1.sampleObj.Customer;
 import com.jaxb.test1.JAXBExample;
-import com.jaxb.test1.Product;
-import com.jaxb.test1.Products;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BASE64Test {
 	public static void main(String[] args) {

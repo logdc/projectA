@@ -1,5 +1,9 @@
 package com.jaxb.test1;
 
+import com.jaxb.test1.sampleObj.Customer;
+import com.jaxb.test1.sampleObj.Product;
+import com.jaxb.test1.sampleObj.Products;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.JAXBContext;

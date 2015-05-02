@@ -1,4 +1,4 @@
-package com.jaxb.test1;
+package com.jaxb.test1.sampleObj;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

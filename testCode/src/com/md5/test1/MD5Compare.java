@@ -1,10 +1,9 @@
 package com.md5.test1;
 
-import com.common.test.ObjectUtil;
-import com.jaxb.test1.Customer;
+import com.transfer.object.ObjectUtil;
+import com.jaxb.test1.sampleObj.Customer;
 import com.jaxb.test1.JAXBExample;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.security.MessageDigest;
