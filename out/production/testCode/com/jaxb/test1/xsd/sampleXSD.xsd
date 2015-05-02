@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Features">
+		<xs:annotation>
+			<xs:documentation>QueryChange</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="networkName" type="xs:string" minOccurs="0"/>
+				<xs:element name="FeatureCollection" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="featureMember" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Road">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="lineId" type="xs:long" nillable="false"/>
+													<xs:element name="lineName" type="xs:string" minOccurs="0"/>
+													<xs:element name="passNodeIds"/>
+													<xs:element name="passNodeNames"/>
+													<xs:element name="passNodeCoordinates"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

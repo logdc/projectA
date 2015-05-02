@@ -1,4 +1,4 @@
-package com.md5.test1;
+package com.transfer.object;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.HashSet;

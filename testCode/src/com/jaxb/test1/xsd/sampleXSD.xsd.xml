@@ -1,0 +1,16 @@
+<Features>
+  <networkName>anyType</networkName>
+  <!--1 or more repetitions:-->
+  <FeatureCollection>
+    <!--1 or more repetitions:-->
+    <featureMember>
+      <Road>
+        <lineId>anyType</lineId>
+        <lineName>anyType</lineName>
+        <passNodeIds>anyType</passNodeIds>
+        <passNodeNames>anyType</passNodeNames>
+        <passNodeCoordinates>anyType</passNodeCoordinates>
+      </Road>
+    </featureMember>
+  </FeatureCollection>
+</Features>

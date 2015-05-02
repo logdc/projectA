@@ -1,5 +1,6 @@
 package com.md5.test1;
 
+import com.transfer.object.ObjectSizeCalculator;
 import com.transfer.object.ObjectUtil;
 import com.jaxb.test1.sampleObj.Customer;
 import com.jaxb.test1.JAXBExample;
