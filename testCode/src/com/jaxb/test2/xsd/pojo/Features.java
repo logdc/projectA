@@ -177,6 +177,7 @@ public class Features {
     @XmlType(name = "", propOrder = {
         "featureMember"
     })
+    @XmlRootElement(name = "FeatureCollection")
     public static class FeatureCollection {
 
         @XmlElement(required = true)
