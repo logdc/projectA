@@ -1,5 +1,5 @@
 
-package com.jaxb.test1.xsd.pojo;
+package com.jaxb.test2.xsd.pojo;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

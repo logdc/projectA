@@ -1,7 +1,7 @@
-package com.jaxb.test1;
+package com.jaxb.test2;
 
-import com.jaxb.test1.xsd.pojo.Features;
-import com.jaxb.test1.xsd.pojo.ObjectFactory;
+import com.jaxb.test2.xsd.pojo.Features;
+import com.jaxb.test2.xsd.pojo.ObjectFactory;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
