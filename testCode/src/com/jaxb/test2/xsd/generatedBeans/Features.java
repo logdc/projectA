@@ -1,5 +1,5 @@
 
-package com.jaxb.test2.xsd.pojo;
+package com.jaxb.test2.xsd.generatedBeans;
 
 import java.util.ArrayList;
 import java.util.List;
