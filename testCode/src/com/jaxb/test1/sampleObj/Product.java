@@ -1,8 +1,10 @@
 package com.jaxb.test1.sampleObj;
 
+import com.jaxb.test1.DoubleAdapter;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
 
 //@XmlType (propOrder = {"typeName", "id", "name"})
@@ -12,6 +14,7 @@ public class Product implements Serializable{
 	private long id;
 	private String name;
 	private String typeName;
+	private Double price;
 
 	public long getId() {
 		return id;
@@ -35,5 +38,14 @@ public class Product implements Serializable{
 	@XmlElement
 	public void setTypeName(String typeName) {
 		this.typeName = typeName;
+	}
+	@XmlElement
+	@XmlJavaTypeAdapter(DoubleAdapter.class)
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
 	}
 }

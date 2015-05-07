@@ -1,7 +1,10 @@
 package com.jaxb.test1.sampleObj;
 
+import com.jaxb.test1.DateAdapter;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
@@ -21,6 +24,7 @@ public class Products implements Serializable{
 		return Calendar.getInstance().getTime();
 	}
 	@XmlElement
+	@XmlJavaTypeAdapter(DateAdapter.class)
 	public void setTestAttr(Date testAttr) {
 		this.testAttr = testAttr;
 	}

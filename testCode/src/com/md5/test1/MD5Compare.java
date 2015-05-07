@@ -15,19 +15,26 @@ import java.security.NoSuchAlgorithmException;
  */
 public class MD5Compare {
 	public static void main(String[] args) throws NoSuchAlgorithmException, IOException, IllegalAccessException {
-
+		// get sample object
 		Customer customer = JAXBExample.getSampleCustomer();
 
+		// try to convert the object with MD5
 		byte[] b = ObjectUtil.serialize(customer);
-
 		MessageDigest messageDigest = MessageDigest.getInstance("MD5");
 		messageDigest.update(b);
 		byte[] resultByteArray = messageDigest.digest();
+
+
+		// get object size in bytes
 		long objSize = ObjectSizeCalculator.sizeOf(customer);
+
+
+		// print the object size and md5 string
 		System.out.println(objSize);
 		String objMD5Str = byteArrayToHex(resultByteArray);
 		System.out.println(objMD5Str);
 
+		// write to a doc for compare each time
 		String path = "/Users/applec/Documents/IdeaProjects/projectA/tmp/md5compare.txt";
 		FileWriter writer = new FileWriter(path, true);
 		writer.write(objSize + objMD5Str + "\n");
