@@ -6,7 +6,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -21,7 +20,7 @@ public class Products implements Serializable{
 	private List<Product> productList;
 
 	public Date getTestAttr() {
-		return Calendar.getInstance().getTime();
+		return testAttr;
 	}
 	@XmlElement
 	@XmlJavaTypeAdapter(DateAdapter.class)
@@ -43,5 +42,14 @@ public class Products implements Serializable{
 	@XmlElement(name="product")
 	public void setProductList(List<Product> productList) {
 		this.productList = productList;
+	}
+
+	@Override
+	public String toString() {
+		return "Products{" +
+				"testAttr=" + testAttr +
+				", testAttr_lab='" + testAttr_lab + '\'' +
+				", productList=" + productList +
+				'}';
 	}
 }

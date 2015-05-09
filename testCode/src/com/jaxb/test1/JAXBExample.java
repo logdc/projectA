@@ -5,6 +5,7 @@ import com.jaxb.test1.sampleObj.Product;
 import com.jaxb.test1.sampleObj.Products;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -19,7 +20,7 @@ public class JAXBExample {
 		customer.setName("benson11111");
 		customer.setAge(23);
 		Products products = new Products();
-//		products.setTestAttr(34234);
+		products.setTestAttr(Calendar.getInstance().getTime());
 		List<Product> productList = new ArrayList<Product>();
 		Product product1 = new Product();
 		product1.setId(99);
@@ -53,6 +54,8 @@ public class JAXBExample {
 
 		//	jaxbMarshaller.marshal(customer, file);
 			jaxbMarshaller.marshal(customer, System.out);
+
+			System.out.println(customer.toString());
 
 		} catch (JAXBException e) {
 			e.printStackTrace();

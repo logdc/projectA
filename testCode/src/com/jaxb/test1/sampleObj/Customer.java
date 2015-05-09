@@ -74,4 +74,14 @@ public class Customer implements Serializable{
 		result = 31 * result + (products != null ? products.hashCode() : 0);
 		return result;
 	}
+
+	@Override
+	public String toString() {
+		return "Customer{" +
+				"name='" + name + '\'' +
+				", age=" + age +
+				", id=" + id +
+				", products=" + products +
+				'}';
+	}
 }
