@@ -1,4 +1,4 @@
-package com.jaxb.test2.xsd.analyzer;
+package com.jaxb.test2.analyzer;
 
 /**
  * Created by applec on 15/5/5.

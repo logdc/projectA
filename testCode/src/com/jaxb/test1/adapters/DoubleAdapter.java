@@ -1,4 +1,4 @@
-package com.jaxb.test1;
+package com.jaxb.test1.adapters;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.text.DecimalFormat;

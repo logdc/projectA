@@ -1,7 +1,5 @@
-package com.jaxb.test2;
+package com.jaxb.test2.analyzer;
 
-import com.jaxb.test2.xsd.analyzer.XMLConstants;
-import com.jaxb.test2.xsd.analyzer.XSDNode;
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;

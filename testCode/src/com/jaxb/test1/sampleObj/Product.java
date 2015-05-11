@@ -1,6 +1,6 @@
 package com.jaxb.test1.sampleObj;
 
-import com.jaxb.test1.DoubleAdapter;
+import com.jaxb.test1.adapters.DoubleAdapter;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
