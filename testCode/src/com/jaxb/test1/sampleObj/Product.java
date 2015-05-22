@@ -15,6 +15,7 @@ public class Product implements Serializable{
 	private String name;
 	private String typeName;
 	private Double price;
+	private Boolean isGood;
 
 	public long getId() {
 		return id;
@@ -47,6 +48,15 @@ public class Product implements Serializable{
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	public Boolean isGood() {
+		return isGood;
+	}
+
+	@XmlElement
+	public void setGood(Boolean isGood) {
+		this.isGood = isGood;
 	}
 
 	@Override

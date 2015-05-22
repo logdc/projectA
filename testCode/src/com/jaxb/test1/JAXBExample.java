@@ -27,12 +27,14 @@ public class JAXBExample {
 		product1.setName("pro1");
 		product1.setTypeName("A");
 		product1.setPrice(new Double(23.235234235325323242));
+		product1.setGood(true);
 		productList.add(product1);
 		Product product2 = new Product();
 		product2.setId(199);
-		product2.setName("pro2");
+		product2.setName(null);
 		product2.setTypeName("B");
 		product2.setPrice(new Double(44.22*4321));
+//		product2.setGood(false);
 		productList.add(product2);
 		products.setProductList(productList);
 		customer.setProducts(products);
