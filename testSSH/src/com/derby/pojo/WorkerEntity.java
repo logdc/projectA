@@ -30,7 +30,7 @@ public class WorkerEntity {
 	}
 
 	@Basic
-	@Column(name = "NAME")
+	@Column(name = "NAME") // Transient
 	public String getName() {
 		return name;
 	}

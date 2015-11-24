@@ -3,6 +3,7 @@ package com.annontations.test1;
 import java.lang.reflect.Method;
 
 /**
+ * annotation main execution class
  * Created by applec on 15/5/2.
  */
 public class AnalysisAnnotation {

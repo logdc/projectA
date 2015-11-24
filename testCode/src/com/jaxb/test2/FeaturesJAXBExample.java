@@ -113,8 +113,8 @@ public class FeaturesJAXBExample {
 			}
 
 			// 计算当前记录转换成XML后的长度（注意:会)
-			StringWriter w = new StringWriter();
-			marshaller.marshal(featureCollection, w);
+//			StringWriter w = new StringWriter();
+//			marshaller.marshal(featureCollection, w);
 //			int curRecLength = w.getBuffer().length();
 //			System.out.println("当前记录的长度为(含xmlns)：" + curRecLength);
 //			System.out.println(w);
