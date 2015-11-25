@@ -7,6 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * method level annotation sample object
  * Created by applec on 15/5/2.
  */
 @Retention(RetentionPolicy.RUNTIME)

@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * double adapter for jaxb class config
  * Created by applec on 15/5/7.
  */
 public class DoubleAdapter extends XmlAdapter<String, Double> {

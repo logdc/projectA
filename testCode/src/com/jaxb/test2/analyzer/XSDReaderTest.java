@@ -11,9 +11,11 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * test class to analyze xsd node
+ * copy from internet
  * Created by applec on 15/5/5.
  */
-public class XSDReader {
+public class XSDReaderTest {
 
 	private List<XSDNode> list = new ArrayList<XSDNode>();
 	/**
@@ -144,8 +146,8 @@ public class XSDReader {
 
 	public static void main(String[] args) {
 		try {
-			String realPath = XSDReader.class.getResource("/").getPath();
-			XSDReader xsdReader = new XSDReader();
+			String realPath = XSDReaderTest.class.getResource("/").getPath();
+			XSDReaderTest xsdReader = new XSDReaderTest();
 
 			List<XSDNode> nodes = xsdReader.paserXSD(realPath+"/com/jaxb/test2/xsd/sampleXSD.xsd");
 

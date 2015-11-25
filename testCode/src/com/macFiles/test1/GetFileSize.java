@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.text.DecimalFormat;
 
 /**
+ * test file to collect folder size on mac
  * Created by applec on 15/5/2.
  * the code is not working on MAC for "Library" folder!
  */

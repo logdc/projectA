@@ -16,7 +16,11 @@ import java.io.OutputStream;
 import java.io.StringWriter;
 import java.util.Date;
 
-public class FeaturesJAXBExample {
+/**
+ * main test class to test jaxb convert by normal marshal (once) and
+ *  stream marshal (big xml handling)
+ */
+public class FeaturesJAXBExampleTest {
 
 	public static Features getSampleFeatures(){
 		ObjectFactory of = new ObjectFactory();

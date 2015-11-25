@@ -9,9 +9,11 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 /**
+ * test derby connect and do something class
  * Created by applec on 15/4/28.
+ * @see /Users/applec/Documents/IdeaProjects/projectA/DerbyTestDB1
  */
-public class FirstTestDBConn {
+public class FirstTestDBConnTest {
 	private String framework = "embedded";
 	private static String protocol = "jdbc:derby:";
 

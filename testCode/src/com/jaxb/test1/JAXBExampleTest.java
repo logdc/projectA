@@ -11,7 +11,11 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-public class JAXBExample {
+/**
+ * main test class to test object (with date and double convert) to xml string
+ * @author clb
+ */
+public class JAXBExampleTest {
 
 	public static Customer getSampleCustomer(){
 

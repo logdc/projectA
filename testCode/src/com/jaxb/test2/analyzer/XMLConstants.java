@@ -1,8 +1,5 @@
 package com.jaxb.test2.analyzer;
 
-/**
- * Created by applec on 15/5/5.
- */
 public class XMLConstants {
 
 	// 默认数据节点，设置为空则认为根目录为默认数据节点

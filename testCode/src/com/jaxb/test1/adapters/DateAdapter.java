@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * date adapter for jaxb class config
  * Created by applec on 15/5/7.
  */
 public class DateAdapter extends XmlAdapter<String, Date> {

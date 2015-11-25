@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
  * annotation main execution class
  * Created by applec on 15/5/2.
  */
-public class AnalysisAnnotation {
+public class AnalysisAnnotationTest {
 	/**
 	 * 在运行时分析处理annotation类型的信息
 	 */

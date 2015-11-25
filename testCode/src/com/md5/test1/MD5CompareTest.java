@@ -3,7 +3,7 @@ package com.md5.test1;
 import com.transfer.object.ObjectSizeCalculator;
 import com.transfer.object.ObjectUtil;
 import com.jaxb.test1.sampleObj.Customer;
-import com.jaxb.test1.JAXBExample;
+import com.jaxb.test1.JAXBExampleTest;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,12 +11,14 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
+ * test md5 encode and compare the result generated each time
+ *  Note that a result file would be put on disk each execution
  * Created by applec on 15/4/30.
  */
-public class MD5Compare {
+public class MD5CompareTest {
 	public static void main(String[] args) throws NoSuchAlgorithmException, IOException, IllegalAccessException {
 		// get sample object
-		Customer customer = JAXBExample.getSampleCustomer();
+		Customer customer = JAXBExampleTest.getSampleCustomer();
 
 		// try to convert the object with MD5
 		byte[] b = ObjectUtil.serialize(customer);

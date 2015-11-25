@@ -9,9 +9,6 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by applec on 15/4/22.
- */
 @XmlRootElement(name="products")
 public class Products implements Serializable{
 	private static final long serialVersionUID = -1741379744111211199L;

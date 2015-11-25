@@ -2,7 +2,7 @@ package com.md5.test1;
 
 import com.transfer.object.ObjectUtil;
 import com.jaxb.test1.sampleObj.Customer;
-import com.jaxb.test1.JAXBExample;
+import com.jaxb.test1.JAXBExampleTest;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
@@ -10,10 +10,14 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
+
+/**
+ * test base64 encode result
+ */
 public class BASE64Test {
 	public static void main(String[] args) {
 
-		Customer customer = JAXBExample.getSampleCustomer();
+		Customer customer = JAXBExampleTest.getSampleCustomer();
 
 
 		// test base64 encoding and decoding

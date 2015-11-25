@@ -5,7 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- *
+ * calculator for calc object size \n
+ * copy from internet
  * @author Kyrylo Holodnov
  */
 public class ObjectSizeCalculator {

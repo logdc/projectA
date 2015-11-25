@@ -1,6 +1,7 @@
 package com.annontations.test1;
 
 /**
+ * sample class use user defined annotation
  * Created by applec on 15/5/2.
  */
 @Description(value = "这是一个有用的工具类")
