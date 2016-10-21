@@ -33,4 +33,19 @@ public class XlsxUtil {
 			return String.valueOf(xssfCell.getStringCellValue());
 		}
 	}
+
+	/**
+	 * make sure loop won't dead
+	 * @param first
+	 * @param last
+	 * @return
+	 */
+	public static int lastOneIndexForLoop(int first, int last){
+//		int max = Integer.MAX_VALUE;
+		if(first < 0)   first = 0;
+		if(last < 0)    last = 0;
+		if(first > last)    return 0;
+
+		return last;
+	}
 }
