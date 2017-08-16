@@ -1,6 +1,5 @@
 package com.testng.test1;
 
-import mockit.Expectations;
 import mockit.Mocked;
 import mockit.NonStrictExpectations;
 import mockit.Tested;
@@ -14,7 +13,11 @@ import org.testng.annotations.Test;
 public class MockUTTemplate extends AssertJUnit{
 
 	@Mocked ({"loadDataMethodWithParam", "loadDataMethodNoParam"})
-	TestServiceBean mockedRemote;
+	TestServiceAbstract mockedRemote;
+	@Mocked ({"loadDataMethodWithParam", "loadDataMethodNoParam"})
+	TestServiceABean mockedARemote;
+	@Mocked ({"loadDataMethodNoParam"})
+	TestServiceBBean mockedBRemote;
 
 	@Tested
 	TestTarget testTarget;
@@ -38,10 +41,17 @@ public class MockUTTemplate extends AssertJUnit{
 
 		new NonStrictExpectations(){
 			{
-				mockedRemote.loadDataMethodWithParam(id);
-				result = resultObj;
-				mockedRemote.loadDataMethodNoParam();
-				result = resultObj;
+				if(TestFactory.create(id) instanceof TestServiceABean){
+					mockedARemote.loadDataMethodWithParam(id);
+					result = resultObj;
+					mockedARemote.loadDataMethodNoParam();
+					result = resultObj;
+				} else {
+					mockedRemote.loadDataMethodWithParam(id);
+					result = resultObj;
+					mockedRemote.loadDataMethodNoParam();
+					result = resultObj;
+				}
 			}
 		};
 
@@ -65,7 +75,7 @@ public class MockUTTemplate extends AssertJUnit{
 
 		new NonStrictExpectations(){
 			{
-				mockedRemote.loadDataMethodNoParam();
+				mockedBRemote.loadDataMethodNoParam();
 				result = resultObj;
 			}
 		};
